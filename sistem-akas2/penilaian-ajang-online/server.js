@@ -59,8 +59,8 @@ function fileStorage() {
 
 /* Penyimpanan Supabase (Postgres) lewat REST (PostgREST). Kunci service_role hanya ada di server. */
 function supabaseStorage() {
-  const url = String(process.env.SUPABASE_URL || '').trim().replace(/\/+$/, '');
-  const key = String(process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim();
+  const url = String(process.env.https://exavwndmfdshnqeczgdn.supabase.co || '').trim().replace(/\/+$/, '');
+  const key = String(process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV4YXZ3bmRtZmRzaG5xZWN6Z2RuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5Mjk1NTE1OCwiZXhwIjoyMTA4NTMxMTU4fQ.a59VYsOdJPy876CMSNeH0oQHRVl5nHePXkhA_b29dIc || process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim();
   const base = url + '/rest/v1';
   const st = { name: 'supabase', lastOk: 0, lastError: '', describe: () => 'Supabase ' + url };
   function hdr(prefer) { const h = { apikey: key, 'Content-Type': 'application/json' }; if (key.startsWith('eyJ')) h.Authorization = 'Bearer ' + key; if (prefer) h.Prefer = prefer; return h; }
