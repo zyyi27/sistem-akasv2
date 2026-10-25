@@ -1,0 +1,15 @@
+{
+  "name": "penilaian-ajang-online",
+  "version": "1.0.0",
+  "description": "Server sistem penilaian lomba (nilai, rekap, papan skor) dengan sinkron langsung antar perangkat.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/api.test.js && node test/supabase.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true
+}
