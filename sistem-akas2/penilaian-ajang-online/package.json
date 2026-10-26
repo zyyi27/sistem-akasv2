@@ -8,7 +8,7 @@
     "test": "node test/api.test.js && node test/supabase.test.js"
   },
   "engines": {
-    "node": ">=24.15.0"
+    "node": ">=20.x"
   },
   "license": "MIT",
   "private": true
